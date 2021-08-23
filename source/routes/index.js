@@ -11,7 +11,8 @@ const CrollController   = require('../controllers/croll_controller');
 router.get('/', MainController.getMain);
 router.get('/init', InitController.getInit);
 router.get('/account', cors(),AccountController.getAccount);
-router.get('/croll', cors(),CrollController.getHtml);
+router.get('/croll/month=:month&day=:day', cors(),CrollController.getHtml);
+
 // router.post('/api/signup', function(req, res, next){
 //     var id       = req.body.id;
 //     var password = req.body.password;
