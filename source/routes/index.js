@@ -9,9 +9,12 @@ const MainController    = require('../controllers/main_controller');
 const CrollController   = require('../controllers/croll_controller');
 
 router.get('/', MainController.getMain);
-router.get('/init', InitController.getInit);
+router.get('/init', InitController.getInit); //서버 초기 세팅
 router.get('/account', cors(),AccountController.getAccount);
-router.get('/croll', cors(),CrollController.getHtml);
+router.get('/croll/:site/month=:month&day=:day', cors(),CrollController.getCroll); //방탈 크롤
+router.get('/croll/matjip/keyword=:keyword', cors(),CrollController.getCroll); //맛집 크롤
+router.get('/croll/question=:question', cors(),CrollController.getCroll); //자연어 처리
+
 // router.post('/api/signup', function(req, res, next){
 //     var id       = req.body.id;
 //     var password = req.body.password;

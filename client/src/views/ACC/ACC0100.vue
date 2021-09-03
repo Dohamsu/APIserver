@@ -128,9 +128,9 @@ export default {
       
       var answer = this.$ref.answer.value;
       if(answer==1){
-        resultText = "정답입니다"
+        this.resultText = "정답입니다"
       }else{
-        resultText = "ㄸ앵ㅇ"
+        this.resultText = "ㄸ앵ㅇ"
       }
 
 
