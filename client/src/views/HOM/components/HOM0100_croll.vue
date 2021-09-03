@@ -28,7 +28,7 @@ export default {
     methods  : {
 
         clickCrollBtn : function(){
-            this.$http.get('http://localhost:80/croll')
+            this.$http.get('http://110.35.170.102:8808/croll/')
                 .then((res) => {
                     
                     console.table(res.data);
