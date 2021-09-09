@@ -39,9 +39,15 @@
 import "@/assets/css/common.css"
 
 export default {
-  metaInfo : {
 
-  },
+  metaInfo: {
+		title : "메인 타이틀",
+		meta : [
+			{name : "last-modified", content : "Mon Jan 09 2020 15:00:00 GMT+0900"}
+		]
+	},
+
+
   components : {
 
   },
